@@ -1,6 +1,6 @@
 #include "dbsystem.hpp"
 
-#include "string.hpp"
+#include "datum/string.hpp"
 
 using namespace WarGrey::SCADA;
 

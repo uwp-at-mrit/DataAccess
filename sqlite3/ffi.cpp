@@ -4,9 +4,10 @@
 #include "sqlite3/vsqlite3.hpp"
 #include "sqlite3/sqlite_master.hpp"
 
+#include "datum/box.hpp"
+#include "datum/string.hpp"
+
 #include "win32.hpp"
-#include "box.hpp"
-#include "string.hpp"
 
 using namespace WarGrey::SCADA;
 
