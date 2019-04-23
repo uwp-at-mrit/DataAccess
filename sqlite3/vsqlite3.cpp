@@ -2,7 +2,7 @@
 
 #include "sqlite3/vsqlite3.hpp"
 
-#include "string.hpp"
+#include "datum/string.hpp"
 
 using namespace WarGrey::SCADA;
 
