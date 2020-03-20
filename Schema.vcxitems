@@ -17,6 +17,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)dbmisc.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)dbsystem.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)dbtypes.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mssql\nclient.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)sqlite3\rotation.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)sqlite3\sqlite_master.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)vsql.hpp" />
@@ -27,6 +28,7 @@
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)dbmisc.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)dbsystem.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)mssql\nclient.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)sqlite3\ffi.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)sqlite3\rotation.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)sqlite3\sqlite_master.cpp" />
@@ -38,5 +40,6 @@
     <None Include="$(MSBuildThisFileDirectory)stone\lib\sqlite3.dll">
       <DeploymentContent>true</DeploymentContent>
     </None>
+    <None Include="$(MSBuildThisFileDirectory)stone\lib\sqlncli11.dll" />
   </ItemGroup>
 </Project>

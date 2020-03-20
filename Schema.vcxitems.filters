@@ -18,6 +18,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)sqlite3\ffi.hpp">
       <Filter>sqlite3</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)mssql\nclient.hpp">
+      <Filter>mssql</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)dbsystem.cpp" />
@@ -35,6 +38,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)sqlite3\ffi.cpp">
       <Filter>sqlite3</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)mssql\nclient.cpp">
+      <Filter>mssql</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="sqlite3">
@@ -46,12 +52,18 @@
     <Filter Include="stone\lib">
       <UniqueIdentifier>{0cc5af20-8380-46f0-94be-338eeac1bdb4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="mssql">
+      <UniqueIdentifier>{e3da1764-a941-4cec-8fe4-ed3ac5058a60}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)sqlite3\sqlite_master.dao.rkt">
       <Filter>sqlite3</Filter>
     </None>
     <None Include="$(MSBuildThisFileDirectory)stone\lib\sqlite3.dll">
+      <Filter>stone\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)stone\lib\sqlncli11.dll">
       <Filter>stone\lib</Filter>
     </None>
   </ItemGroup>

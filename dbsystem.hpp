@@ -14,7 +14,7 @@ namespace WarGrey::SCADA {
         type query_##value(const std::string& sql); \
         type query_##value(const char* sql, ...)
 
-	private enum class DBMS { SQLite3 };
+	private enum class DBMS { SQLite3, MSSQLServer };
 
 	private class IDBObject {
 	public:
