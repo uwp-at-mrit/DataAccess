@@ -10,7 +10,7 @@ namespace WarGrey::SCADA {
 	public:
 		virtual ~RotativeSQLite3() noexcept;
 
-		RotativeSQLite3(Platform::String^ dbdirname, WarGrey::SCADA::Syslog* logger = nullptr,
+		RotativeSQLite3(Platform::String^ dbdirname, WarGrey::GYDM::Syslog* logger = nullptr,
 			WarGrey::SCADA::RotationPeriod period = RotationPeriod::Daily, unsigned int period_count = 1U,
 			Platform::String^ file_prefix = nullptr, Platform::String^ file_suffix = ".db",
 			sqlite3_trace_f xCallback = nullptr);
@@ -47,7 +47,7 @@ namespace WarGrey::SCADA {
 	private:
 		WarGrey::SCADA::SQLite3* prev_employee;
 		WarGrey::SCADA::SQLite3* employee;
-		WarGrey::SCADA::Syslog* logger;
+		WarGrey::GYDM::Syslog* logger;
 		sqlite3_trace_f xCallback;
 
 	private:

@@ -40,7 +40,7 @@ namespace WarGrey::SCADA {
 	public:
 		virtual ~ISQLite3() noexcept;
 
-		ISQLite3(WarGrey::SCADA::Syslog* logger);
+		ISQLite3(WarGrey::GYDM::Syslog* logger);
 
 	public:
 		int libversion();
@@ -103,7 +103,7 @@ namespace WarGrey::SCADA {
 	public:
 		virtual ~SQLite3() noexcept;
 
-		SQLite3(const wchar_t* dbfile = nullptr, WarGrey::SCADA::Syslog* logger = nullptr, sqlite3_trace_f xCallback = nullptr);
+		SQLite3(const wchar_t* dbfile = nullptr, WarGrey::GYDM::Syslog* logger = nullptr, sqlite3_trace_f xCallback = nullptr);
 
 	public:
 		std::list<std::string> list_tables() override;

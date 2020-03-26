@@ -3,6 +3,7 @@
 #include "datum/string.hpp"
 
 using namespace WarGrey::SCADA;
+using namespace WarGrey::GYDM;
 
 #define DBMaybe(Type, stmt, column_value, cid) \
     (stmt->column_is_null(cid) ? std::nullopt : std::optional<Type>(stmt->column_value(cid)))

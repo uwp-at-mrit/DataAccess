@@ -40,7 +40,7 @@ namespace WarGrey::SCADA {
 	public:
 		virtual ~IMSSQL() noexcept;
 
-		IMSSQL(WarGrey::SCADA::Syslog* logger);
+		IMSSQL(WarGrey::GYDM::Syslog* logger);
 
 	public:
 		int libversion();
@@ -103,7 +103,7 @@ namespace WarGrey::SCADA {
 	public:
 		virtual ~MSSQL() noexcept;
 
-		MSSQL(const wchar_t* connection = nullptr, WarGrey::SCADA::Syslog* logger = nullptr, mssql_trace_f xCallback = nullptr);
+		MSSQL(const wchar_t* connection = nullptr, WarGrey::GYDM::Syslog* logger = nullptr, mssql_trace_f xCallback = nullptr);
 
 	public:
 		std::list<std::string> list_tables() override;

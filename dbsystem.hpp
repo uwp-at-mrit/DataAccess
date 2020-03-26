@@ -89,10 +89,10 @@ namespace WarGrey::SCADA {
 	public:
 		virtual ~IDBSystem() noexcept;
 
-		IDBSystem(WarGrey::SCADA::DBMS dbms, WarGrey::SCADA::Syslog* logger);
+		IDBSystem(WarGrey::SCADA::DBMS dbms, WarGrey::GYDM::Syslog* logger);
 
 	public:
-		WarGrey::SCADA::Syslog* get_logger();
+		WarGrey::GYDM::Syslog* get_logger();
 		WarGrey::SCADA::IVirtualSQL* make_sql_factory(WarGrey::SCADA::TableColumnInfo* columns, size_t count);
 
 		template<size_t N>
@@ -132,11 +132,11 @@ namespace WarGrey::SCADA {
 		virtual WarGrey::SCADA::IVirtualSQL* new_sql_factory(WarGrey::SCADA::TableColumnInfo* columns, size_t count) = 0;
 
 	private:
-		void log(WarGrey::SCADA::Log level = WarGrey::SCADA::Log::Error);
-		void log(const std::string& msg_prefix, WarGrey::SCADA::Log level = WarGrey::SCADA::Log::Error);
+		void log(WarGrey::GYDM::Log level = WarGrey::GYDM::Log::Error);
+		void log(const std::string& msg_prefix, WarGrey::GYDM::Log level = WarGrey::GYDM::Log::Error);
 
 	private:
-		WarGrey::SCADA::Syslog* logger;
+		WarGrey::GYDM::Syslog* logger;
 		std::map<WarGrey::SCADA::TableColumnInfo*, WarGrey::SCADA::IVirtualSQL*> factories;
 	};
 }

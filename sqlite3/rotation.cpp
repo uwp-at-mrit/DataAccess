@@ -2,6 +2,7 @@
 #include "sqlite3/vsqlite3.hpp"
 
 using namespace WarGrey::SCADA;
+using namespace WarGrey::GYDM;
 
 using namespace Windows::Storage;
 

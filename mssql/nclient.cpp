@@ -11,6 +11,7 @@
 #include "win32.hpp"
 
 using namespace WarGrey::SCADA;
+using namespace WarGrey::GYDM;
 
 typedef int (*_fun__wchar__sqlite3__int)(const wchar_t*, mssql_t**);
 typedef const char* (*_fun__sqlite3__char)(mssql_t*);
